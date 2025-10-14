@@ -1,0 +1,10 @@
+{
+    "atividadesRecentes" : [
+    { "id": 1, "tipo": "Novo paciente", "descricao": "Maria Silva cadastrada", "hora": "10:30", "icone": "➕" },
+    { "id": 2, "tipo": "Consulta agendada", "descricao": "Dr. João - Cardiologia", "hora": "10:15", "icone": "📅" },
+    { "id": 3, "tipo": "Receita emitida", "descricao": "Pedro Santos - Antibiótico", "hora": "09:45", "icone": "💊" },
+    { "id": 4, "tipo": "Exame realizado", "descricao": "Ana Costa - Hemograma", "hora": "09:20", "icone": "🔬" },
+    { "id": 5, "tipo": "Alta hospitalar", "descricao": "Carlos Oliveira - Ala 3", "hora": "08:50", "icone": "✅" }
+  ]
+
+}

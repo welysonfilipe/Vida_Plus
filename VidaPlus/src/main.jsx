@@ -18,6 +18,7 @@ import HistoricoTratamentos from './pages/HistoricoTratamentos';
 import Resultados from './pages/Resultados';
 import Teleconsulta from './pages/Teleconsulta';
 import Contato from './pages/Contato';
+import HomeAdmin from './pages/HomeAdmin';
 
 const router = createBrowserRouter([
   {
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
   {
     path: "/contato",  
     element: <Contato />
+  },
+   {
+    path: "/home-admin",  
+    element: <HomeAdmin />
   }
 ])
 

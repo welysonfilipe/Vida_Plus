@@ -1,0 +1,7 @@
+{
+    "alertas" : [
+    { "id": 1, "tipo": "warning", "mensagem": "5 consultas aguardando confirmação", "urgencia": "média" },
+    { "id": 2, "tipo": "error", "mensagem": "Estoque baixo: Paracetamol 500mg", "urgencia": "alta" },
+    { "id": 3, "tipo": "info", "mensagem": "Backup automático realizado com sucesso", "urgencia": "baixa" }
+  ]
+}

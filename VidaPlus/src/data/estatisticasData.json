@@ -1,0 +1,8 @@
+{
+    "estatisticas" : [
+    { "id": 1, "titulo": "Pacientes", "valor": 120, "icone": "👥", "cor": "#3A5F6F" },
+    { "id": 2, "titulo": "Profissionais", "valor": 45, "icone": "👨‍⚕️", "cor": "#5a8a9f" },
+    { "id": 3, "titulo": "Internações", "valor": 8, "icone": "🏥", "cor": "#7aafcf" },
+    { "id": 4, "titulo": "Consultas Hoje", "valor": 23, "icone": "📅", "cor": "#9ac5df" }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+    "atendimentosMes" :[
+    { "mes": "Jan", "consultas": 85 },
+    { "mes": "Fev", "consultas": 92 },
+    { "mes": "Mar", "consultas": 78 },
+    { "mes": "Abr", "consultas": 95 },
+    { "mes": "Mai", "consultas": 110 },
+    { "mes": "Jun", "consultas": 105 }
+  ]
+}
