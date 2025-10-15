@@ -15,7 +15,7 @@
 
 .navbar-link {
   display: flex;
-  gap: 5px;
+  gap: 4px;
   align-items: center;
 }
 
@@ -44,6 +44,10 @@
   border-radius: 4px;
   transition: background-color 0.2s;
   display: inline-block;
+}
+
+.dropdown-trigger:hover {
+  text-decoration: underline;
 }
 
 .dropdown-menu {

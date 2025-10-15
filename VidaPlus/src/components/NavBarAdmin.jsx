@@ -7,34 +7,48 @@ const NavBarAdmin = () => {
   const [gestaoOpen, setGestaoOpen] = useState(false);
   const [relatoriosOpen, setRelatoriosOpen] = useState(false);
 
+  const toggleGestao = () => {
+    setGestaoOpen(!gestaoOpen);
+    setRelatoriosOpen(false); // Fecha o outro dropdown
+  };
+
+  const toggleRelatorios = () => {
+    setRelatoriosOpen(!relatoriosOpen);
+    setGestaoOpen(false); // Fecha o outro dropdown
+  };
+
+  const closeDropdowns = () => {
+    setGestaoOpen(false);
+    setRelatoriosOpen(false);
+  };
+
   return (
     <nav className='navbar-page'>
       <h2 className='title-page'>Vida Plus</h2>
 
       <div className="navbar-link">
-        <Link to="/home-admin">Home</Link>
+        <Link to="/dashboard-admin" onClick={closeDropdowns}>Home</Link>
         
         {/* Dropdown Gestão */}
-        <div 
-          className="navbar-dropdown"
-          onMouseEnter={() => setGestaoOpen(true)}
-          onMouseLeave={() => setGestaoOpen(false)}
-        >
-          <span className="dropdown-trigger">
+        <div className="navbar-dropdown">
+          <span 
+            className="dropdown-trigger"
+            onClick={toggleGestao}
+          >
             Gestão ▾
           </span>
           {gestaoOpen && (
             <div className="dropdown-menu">
-              <Link to="/gestao-pacientes" className="dropdown-item">
+              <Link to="/gestao-pacientes" className="dropdown-item" onClick={closeDropdowns}>
                 👥 Pacientes
               </Link>
-              <Link to="/gestao-profissionais" className="dropdown-item">
+              <Link to="/gestao-profissionais" className="dropdown-item" onClick={closeDropdowns}>
                 👨‍⚕️ Profissionais
               </Link>
-              <Link to="/gestao-internacoes" className="dropdown-item">
+              <Link to="/gestao-internacoes" className="dropdown-item" onClick={closeDropdowns}>
                 🏥 Internações
               </Link>
-              <Link to="/gestao-agenda" className="dropdown-item">
+              <Link to="/gestao-agenda" className="dropdown-item" onClick={closeDropdowns}>
                 📅 Agenda
               </Link>
             </div>
@@ -42,23 +56,22 @@ const NavBarAdmin = () => {
         </div>
 
         {/* Dropdown Relatórios */}
-        <div 
-          className="navbar-dropdown"
-          onMouseEnter={() => setRelatoriosOpen(true)}
-          onMouseLeave={() => setRelatoriosOpen(false)}
-        >
-          <span className="dropdown-trigger">
+        <div className="navbar-dropdown">
+          <span 
+            className="dropdown-trigger"
+            onClick={toggleRelatorios}
+          >
             Relatórios ▾
           </span>
           {relatoriosOpen && (
             <div className="dropdown-menu">
-              <Link to="/relatorios-atendimentos" className="dropdown-item">
+              <Link to="/relatorios-atendimentos" className="dropdown-item" onClick={closeDropdowns}>
                 📊 Atendimentos
               </Link>
-              <Link to="/relatorios-financeiro" className="dropdown-item">
+              <Link to="/relatorios-financeiro" className="dropdown-item" onClick={closeDropdowns}>
                 💰 Financeiro
               </Link>
-              <Link to="/relatorios-estoque" className="dropdown-item">
+              <Link to="/relatorios-estoque" className="dropdown-item" onClick={closeDropdowns}>
                 📦 Estoque
               </Link>
             </div>
@@ -69,7 +82,7 @@ const NavBarAdmin = () => {
           to="/" 
           className="link-sair"
           onClick={() => {
-            // Aqui você pode adicionar lógica de logout
+            closeDropdowns();
             console.log("Saindo do sistema admin...");
           }}
         >

@@ -57,10 +57,49 @@ const router = createBrowserRouter([
     path: "/contato",  
     element: <Contato />
   },
-   {
+  {
     path: "/home-admin",  
     element: <HomeAdmin />
   }
+
+  /*
+   // Páginas Gestão Administradores
+   {
+    path: "/home-admin",  
+    element: <HomeAdmin />
+  },
+  {
+    path: "/gestao-pacientes",  
+    element: <GestaoPacientes />
+  },
+  {
+    path: "/gestao-profissionais",  
+    element: <GestaoProfissionais />
+  },
+  {
+    path: "/gestao-internacoes",  
+    element: <GestaoInternacoes />
+  },
+  {
+    path: "/gestao-agenda",  
+    element: <GestaoAgenda />
+  },
+
+  
+  // Páginas Relatórios Administradores
+    {
+    path: "/relatorios-atendimentos",  
+    element: <RelatoriosAtendimentos />
+  },
+  {
+    path: "/relatorios-Financeiro",  
+    element: <RelatoriosFinanceiros />
+  },
+  {
+    path: "/relatorios-estoque",  
+    element: <RelatoriosEstoque/>
+  }
+  */
 ])
 
 createRoot(document.getElementById('root')).render(
