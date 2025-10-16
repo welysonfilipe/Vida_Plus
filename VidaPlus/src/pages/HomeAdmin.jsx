@@ -8,7 +8,6 @@ import alertasData from "../data/alertasData.json"
 import NavBarAdmin from "../components/NavBarAdmin";
 
 const HomeAdmin = () => {
-  const navigate = useNavigate();
 
   // Dados mockados
   const estatisticas = estatisticasData.estatisticas

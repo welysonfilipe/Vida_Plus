@@ -1,0 +1,31 @@
+{
+    "historicoConsultas" : [
+    {
+      "id": 1,
+      "data": "15/10/2025",
+      "medico": "Dr. João Carvalho",
+      "especialidade": "Neurologia",
+      "sintomas": "Dor de cabeça persistente, tontura",
+      "diagnostico": "Enxaqueca crônica",
+      "prescricao": "Paracetamol 750mg - 3x ao dia"
+    },
+    {
+      "id": 2,
+      "data": "10/09/2025",
+      "medico": "Dra. Ana Lima",
+      "especialidade": "Clínico Geral",
+      "sintomas": "Febre, dor no corpo",
+      "diagnostico": "Gripe comum",
+      "prescricao": "Repouso e hidratação"
+    },
+    {
+      "id": 3,
+      "data": "20/08/2025",
+      "medico": "Dr. Ricardo Martins",
+      "especialidade": "Ortopedia",
+      "sintomas": "Dor nas costas",
+      "diagnostico": "Lombalgia",
+      "prescricao": "Anti-inflamatório + Fisioterapia"
+    }
+  ]
+}

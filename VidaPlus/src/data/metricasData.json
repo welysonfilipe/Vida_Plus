@@ -1,0 +1,25 @@
+{
+    "metricas": [
+        { 
+          "id": 1, 
+          "titulo": "Total de Pacientes no mês", 
+          "valor": 120, 
+          "icone": "👥", 
+          "cor": "#3A5F6F" 
+        },
+        { 
+          "id": 2, 
+          "titulo": "Consultas Agendadas", 
+          "valor": 23, 
+          "icone": "📅", 
+          "cor": "#5a8a9f" 
+        },
+        { 
+          "id": 3, 
+          "titulo": "Aguardando Atendimento", 
+          "valor": 5, 
+          "icone": "⏰", 
+          "cor": "#7aafcf" 
+        }
+  ]
+}

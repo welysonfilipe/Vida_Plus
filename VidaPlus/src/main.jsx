@@ -19,6 +19,8 @@ import Resultados from './pages/Resultados';
 import Teleconsulta from './pages/Teleconsulta';
 import Contato from './pages/Contato';
 import HomeAdmin from './pages/HomeAdmin';
+import GestaoPacientes from './pages/GestaoPacientes';
+import Prontuario from './pages/Prontuario';
 
 const router = createBrowserRouter([
   {
@@ -60,7 +62,15 @@ const router = createBrowserRouter([
   {
     path: "/home-admin",  
     element: <HomeAdmin />
-  }
+  },
+  {
+    path: "/gestao-pacientes",  
+    element: <GestaoPacientes />
+  },
+  {
+    path: "/prontuario/:id",  
+    element: <Prontuario />
+  },
 
   /*
    // Páginas Gestão Administradores

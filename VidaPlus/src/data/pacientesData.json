@@ -1,0 +1,36 @@
+{
+    "pacientes" : [
+        { 
+        "id": 1, 
+        "nome": "Welyson Filipe de Oliveira", 
+        "ultimaConsulta": "17/07/2025", 
+        "sintomas": "Dor de cabeça persistente",
+        "medicoResponsavel": "Dr. João Carvalho",
+        "status": "Em Tratamento"
+        },
+        { 
+        "id": 2, 
+        "nome": "Pedro Oliveira Costa", 
+        "ultimaConsulta": "14/08/2025", 
+        "sintomas": "Febre e tosse",
+        "medicoResponsavel": "Dra. Ana Lima",
+        "status": "Ativo"
+        },
+        { 
+        "id": 3, 
+        "nome": "Carlos Eduardo Souza", 
+        "ultimaConsulta": "12/04/2025", 
+        "sintomas": "Check-up de rotina",
+        "medicoResponsavel": "Dr. Ricardo Martins",
+        "status": "Alta"
+        },
+        { 
+        "id": 4, 
+        "nome": "Juliana Ferreira Dias", 
+        "ultimaConsulta": "10/02/2025", 
+        "sintomas": "Dor nas costas",
+        "medicoResponsavel": "Dra. Beatriz Campos",
+        "status": "Em Tratamento"
+        }
+  ]
+}

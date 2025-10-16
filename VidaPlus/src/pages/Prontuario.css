@@ -1,0 +1,167 @@
+.prontuario-container {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.prontuario-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 40px;
+}
+
+/* HEADER */
+.prontuario-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.prontuario-header h1 {
+  font-size: 32px;
+  color: #3A5F6F;
+  margin: 0;
+  text-align: center !important;
+}
+
+.prontuario-header .container-button {
+  width: auto;
+  max-width: none;
+}
+
+.button-voltar {
+  padding: 8px 16px;
+  font-size: 14px;
+  width: auto;
+}
+
+/* CARDS */
+.prontuario-card {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.prontuario-card h2 {
+  font-size: 20px;
+  color: #3A5F6F;
+  margin: 0 0 20px 0;
+  font-weight: 600;
+}
+
+/* DADOS PESSOAIS */
+.dados-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.dado-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.dado-label {
+  font-size: 13px;
+  color: #777;
+  font-weight: 500;
+}
+
+.dado-valor {
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* HISTÓRICO DE CONSULTAS */
+.consultas-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.consulta-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fafafa;
+  transition: box-shadow 0.2s;
+}
+
+.consulta-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.consulta-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.consulta-data,
+.consulta-medico {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
+}
+
+.data-icon,
+.medico-icon {
+  font-size: 16px;
+}
+
+.consulta-detalhes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.detalhe-row {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.detalhe-row strong {
+  color: #333;
+  font-weight: 600;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .prontuario-content {
+    padding: 20px;
+  }
+  
+  .prontuario-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .prontuario-header h1 {
+    font-size: 24px;
+  }
+  
+  .prontuario-card {
+    padding: 20px;
+  }
+  
+  .dados-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .consulta-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
