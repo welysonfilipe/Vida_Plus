@@ -27,7 +27,7 @@ const NavBarAdmin = () => {
       <h2 className='title-page'>Vida Plus</h2>
 
       <div className="navbar-link">
-        <Link to="/dashboard-admin" onClick={closeDropdowns}>Home</Link>
+        <Link to="/home-admin" onClick={closeDropdowns}>Home</Link>
         
         {/* Dropdown Gestão */}
         <div className="navbar-dropdown">
@@ -55,29 +55,12 @@ const NavBarAdmin = () => {
           )}
         </div>
 
-        {/* Dropdown Relatórios */}
-        <div className="navbar-dropdown">
-          <span 
-            className="dropdown-trigger"
-            onClick={toggleRelatorios}
-          >
-            Relatórios ▾
-          </span>
-          {relatoriosOpen && (
-            <div className="dropdown-menu">
-              <Link to="/relatorios-atendimentos" className="dropdown-item" onClick={closeDropdowns}>
-                📊 Atendimentos
-              </Link>
-              <Link to="/relatorios-financeiro" className="dropdown-item" onClick={closeDropdowns}>
-                💰 Financeiro
-              </Link>
-              <Link to="/relatorios-estoque" className="dropdown-item" onClick={closeDropdowns}>
-                📦 Estoque
-              </Link>
-            </div>
-          )}
-        </div>
-
+        <Link 
+        to="/estoque" 
+        onClick={closeDropdowns}
+        >
+          Gestão de Estoque
+        </Link>
         <Link 
           to="/" 
           className="link-sair"

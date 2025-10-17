@@ -21,6 +21,8 @@ import Contato from './pages/Contato';
 import HomeAdmin from './pages/HomeAdmin';
 import GestaoPacientes from './pages/GestaoPacientes';
 import Prontuario from './pages/Prontuario';
+import GestaoProfissionais from './pages/GestaoProfissionais';
+import GestaoInternacoes from './pages/GestaoInternacoes.jsx'
 
 const router = createBrowserRouter([
   {
@@ -70,6 +72,14 @@ const router = createBrowserRouter([
   {
     path: "/prontuario/:id",  
     element: <Prontuario />
+  },
+  {
+    path: "/gestao-profissionais",  
+    element: <GestaoProfissionais />
+  },
+  {
+    path: "/gestao-internacoes",  
+    element: <GestaoInternacoes />
   },
 
   /*
