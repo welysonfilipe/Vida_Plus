@@ -30,3 +30,60 @@
   flex: 0; /*Não aumenta*/
   white-space: nowrap; /*Evita que ocorra uma quebra de linha na h1*/
 }
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .main-content {
+    padding: 25px 30px;
+  }
+  
+  .header-section h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 900px) {
+  .home-content {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .main-content {
+    padding: 20px;
+  }
+  
+  .header-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .header-section h1 {
+    font-size: 24px;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    padding: 15px;
+  }
+  
+  .header-section h1 {
+    font-size: 20px;
+  }
+  
+  /* Adapte aqui conforme o conteúdo da página */
+  .tabela-wrapper {
+    overflow-x: auto;
+  }
+  
+  table {
+    min-width: 600px;
+  }
+}

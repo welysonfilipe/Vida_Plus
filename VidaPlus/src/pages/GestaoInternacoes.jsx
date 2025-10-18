@@ -8,12 +8,14 @@ import internacoesData from "../data/internacoesData.json";
 const GestaoInternacoes = () => {
   const navigate = useNavigate();
 
+  // Arquivos Json na pasta data
   const metricas = internacoesData.metricas;
   const internacoes = internacoesData.internacoes;
 
   const [busca, setBusca] = useState("");
   const [statusFiltro, setStatusFiltro] = useState("");
 
+  // Função de pesquisa
   const internacoesFiltradas = internacoes.filter(i => {
     const matchBusca = i.nome.toLowerCase().includes(busca.toLowerCase()) || 
                        i.id.toLowerCase().includes(busca.toLowerCase());
@@ -21,6 +23,7 @@ const GestaoInternacoes = () => {
     return matchBusca && matchStatus;
   });
 
+  {/* Container página */}
   return (
     <div className="gestao-internacoes-container">
       <NavBarAdmin />

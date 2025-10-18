@@ -8,18 +8,21 @@ import agendaData from "../data/agendaData.json";
 const GestaoAgenda = () => {
   const navigate = useNavigate();
 
+  // Arquivos Json na pasta data
   const metricas = agendaData.metricas;
   const consultas = agendaData.consultas;
 
   const [busca, setBusca] = useState("");
   const [dataFiltro, setDataFiltro] = useState("");
 
+  // Função de pesquisa
   const consultasFiltradas = consultas.filter(c => {
     const matchBusca = c.nomePaciente.toLowerCase().includes(busca.toLowerCase());
     const matchData = dataFiltro === "" || c.dataConsulta === dataFiltro;
     return matchBusca && matchData;
   });
 
+  {/* Container página */}
   return (
     <div className="gestao-agenda-container">
       <NavBarAdmin />

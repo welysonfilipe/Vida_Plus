@@ -10,22 +10,26 @@ import pacientesData from "../data/pacientesData.json";
 const GestaoPacientes = () => {
   const navigate = useNavigate();
 
+  // Arquivos Json na pasta "data"
   const metricas = metricasData.metricas;
   const pacientes = pacientesData.pacientes;
 
   const [busca, setBusca] = useState("");
   const [statusFiltro, setStatusFiltro] = useState("");
 
+  // Função de pesquisa
   const pacientesFiltrados = pacientes.filter(p => {
     const matchBusca = p.nome.toLowerCase().includes(busca.toLowerCase());
     const matchStatus = statusFiltro === "" || p.status === statusFiltro;
     return matchBusca && matchStatus;
   });
 
+  {/* Função para abrir a página "Prontuário.jsx" */}
   const handleRowClick = (paciente) => {
     navigate(`/prontuario/${paciente.id}`);
   };
 
+  {/* Container página */}
   return (
     <div className="gestao-pacientes-container">
       <NavBarAdmin />

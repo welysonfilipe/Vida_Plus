@@ -57,3 +57,85 @@
   border-radius: 4px;
   font-size: 14px;
 }
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .main-content {
+    padding: 25px 30px;
+  }
+  
+  .header-section h1 {
+    font-size: 28px;
+  }
+  
+  .info-section {
+    gap: 15px;
+  }
+  
+  .info-field {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 900px) {
+  .home-content {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .main-content {
+    padding: 20px;
+  }
+  
+  .header-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .header-section h1 {
+    font-size: 24px;
+    white-space: normal;
+  }
+  
+  .info-section {
+    flex-direction: column;
+  }
+  
+  .info-field {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    padding: 15px;
+  }
+  
+  .header-section h1 {
+    font-size: 20px;
+  }
+  
+  .info-section {
+    gap: 10px;
+  }
+  
+  .info-field input {
+    font-size: 13px;
+    padding: 8px;
+  }
+  
+  /* Adapte tabelas se houver */
+  .tabela-wrapper {
+    overflow-x: auto;
+  }
+  
+  table {
+    min-width: 600px;
+  }
+}

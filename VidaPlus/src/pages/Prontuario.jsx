@@ -8,7 +8,7 @@ const Prontuario = () => {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  // Dados mockados do paciente (em produção viria de uma API)
+  // Dados do paciente
   const paciente = {
     id: id,
     nome: "Welyson Filipe de Oliveira",
@@ -21,8 +21,10 @@ const Prontuario = () => {
     email: "welyson.oliveira@email.com"
   };
 
+  // Arquivo Json na pasta data
   const historicoConsultas = historicoData.historicoConsultas
 
+  {/* Container página */}
   return (
     <div className="prontuario-container">
       <NavBarAdmin />

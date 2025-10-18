@@ -22,13 +22,13 @@ const Forms = ({mode}) => {
             // Campos APENAS para Cadastro
             <>
               <label>
-                <input type="text" placeholder="Digite seu nome completo"/>
+                <input type="text" placeholder="Digite seu nome"/>
               </label>
               <label>
                 <input type="e-mail" placeholder="Digite o seu e-mail" />
               </label>
               <label>
-                <input type="tel" placeholder="Digite um número para contato" />
+                <input type="tel" placeholder="(XX)XXXXX-XXXX" />
               </label>
               <label>
                 <input type="password" placeholder="Digite a sua senha" />

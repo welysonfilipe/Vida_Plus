@@ -8,6 +8,7 @@ import profissionaisData from "../data/profissionaisData.json";
 const GestaoProfissionais = () => {
   const navigate = useNavigate();
 
+  // Arquivos Json da pasta "data"
   const metricas = profissionaisData.metricas;
   const profissionais = profissionaisData.profissionais;
 
@@ -20,6 +21,7 @@ const GestaoProfissionais = () => {
     return matchBusca && matchCargo;
   });
 
+  {/* Container página */}
   return (
     <div className="gestao-profissionais-container">
       <NavBarAdmin />

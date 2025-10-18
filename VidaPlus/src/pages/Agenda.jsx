@@ -48,6 +48,7 @@ const Agenda = () => {
     });
   };
 
+  {/* Container página */}
   return (
     <div className="home-container">
       <NavBar />
@@ -58,10 +59,11 @@ const Agenda = () => {
         </aside>
 
         <main className="main-content">
-          <h1>Agendar</h1>
+          <h1>Agendar Consulta</h1>
 
           <div className="tipo-consulta">
             <label className="tipo-label">Tipo de Consulta</label>
+            {/* Checkbox utilizado para escolha da forma da consulta */}
             <div className="checkbox-group">
               <label className="checkbox-item">
                 <input
@@ -83,6 +85,7 @@ const Agenda = () => {
             <p className="info-text">Selecione o dia e o horário da sua consulta</p>
           </div>
 
+          {/* Implementação do componente CalendarComp */}
           <CalendarComp
             events={events}
             onSelectSlot={handleSelectSlot}
@@ -90,6 +93,7 @@ const Agenda = () => {
         </main>
       </div>
 
+      {/* Implementação do componente PopUp */}
       <PopUp
         isOpen={popUpOpen}
         onClose={() => setPopUpOpen(false)}

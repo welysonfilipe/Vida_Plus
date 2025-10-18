@@ -8,12 +8,14 @@ import estoqueData from "../data/estoqueData.json";
 const GestaoEstoque = () => {
   const navigate = useNavigate();
 
+  // Arquivo Json na pasta data
   const estoque = estoqueData.estoque;
 
   const [busca, setBusca] = useState("");
   const [categoriaFiltro, setCategoriaFiltro] = useState("");
   const [statusFiltro, setStatusFiltro] = useState("");
 
+  // Função de pesquisa
   const estoqueFiltrado = estoque.filter(item => {
     const matchBusca = item.nome.toLowerCase().includes(busca.toLowerCase()) || 
                        item.id.toLowerCase().includes(busca.toLowerCase());
@@ -22,6 +24,7 @@ const GestaoEstoque = () => {
     return matchBusca && matchCategoria && matchStatus;
   });
 
+  {/* Container página */}
   return (
     <div className="gestao-estoque-container">
       <NavBarAdmin />

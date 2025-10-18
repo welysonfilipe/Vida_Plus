@@ -21,6 +21,7 @@ const Contato = () => {
     });
   };
 
+  {/* Criação da mensagem de alerta ao enviar o formulário */}
   const handleEnviar = () => {
     console.log("Mensagem enviada:", formData);
     alert("Mensagem enviada com sucesso! Entraremos em contato em breve.");
@@ -34,6 +35,7 @@ const Contato = () => {
     });
   };
 
+  {/* Container página */}
   return (
     <div className="contato-page">
       <NavBar />
@@ -84,6 +86,7 @@ const Contato = () => {
                 />
               </div>
 
+              {/* Lista suspensa de assuntos mensagens */}
               <div className="form-group">
                 <label>Assunto:</label>
                 <select
@@ -113,6 +116,7 @@ const Contato = () => {
               />
             </div>
 
+            {/* Implementação do componente Button */}
             <div className="form-actions">
               <Button
                 text="Enviar Mensagem"

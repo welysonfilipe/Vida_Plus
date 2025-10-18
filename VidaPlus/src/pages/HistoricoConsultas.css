@@ -43,3 +43,125 @@
   color: #3A5F6F;
   font-weight: bold;
 }
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .main-content {
+    padding: 25px 30px;
+  }
+  
+  .header-section h1 {
+    font-size: 28px;
+  }
+  
+  .info-section {
+    gap: 20px;
+  }
+  
+  .info-section h3 {
+    font-size: 15px;
+  }
+  
+  /* Ajuste tabelas se houver */
+  .tabela-header,
+  .tabela-row {
+    grid-template-columns: 130px 180px 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .home-content {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .main-content {
+    padding: 20px;
+  }
+  
+  .header-section h1 {
+    font-size: 24px;
+    white-space: normal; /* Permite quebra de linha */
+  }
+  
+  .info-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .info-section h3 {
+    font-size: 14px;
+    margin-top: 0;
+  }
+  
+  /* Ajuste tabelas */
+  .tabela-header,
+  .tabela-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .tabela-header {
+    display: none; /* Esconde cabeçalho em mobile */
+  }
+  
+  .coluna-data::before {
+    content: "Data: ";
+    font-weight: bold;
+    color: #3A5F6F;
+  }
+  
+  .coluna-especialista::before {
+    content: "Especialista: ";
+    font-weight: bold;
+    color: #3A5F6F;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    padding: 15px;
+  }
+  
+  .header-section {
+    margin-bottom: 20px;
+  }
+  
+  .header-section h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .info-section h3 {
+    font-size: 13px;
+  }
+  
+  .info-section span {
+    font-size: 13px;
+  }
+  
+  /* Tabelas */
+  .tabela-consultas {
+    border-radius: 6px;
+  }
+  
+  .tabela-row {
+    padding: 15px;
+  }
+  
+  .coluna-data,
+  .coluna-especialista,
+  .coluna-dados {
+    font-size: 13px;
+  }
+  
+  .coluna-dados {
+    line-height: 1.5;
+  }
+}

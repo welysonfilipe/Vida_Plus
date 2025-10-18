@@ -7,7 +7,7 @@ import NavBarAdmin from "../components/NavBarAdmin";
 
 const HomeAdmin = () => {
 
-  // Dados mockados
+  // Arquivos Json na pasta "data"
   const estatisticas = estatisticasData.estatisticas
 
   const atendimentosMes = atendimentosMesData.atendimentosMes
@@ -18,6 +18,7 @@ const HomeAdmin = () => {
 
   const maxConsultas = Math.max(...atendimentosMes.map(m => m.consultas));
 
+  {/* Container página */}
   return (
     <div className="Home-admin-container">
       <NavBarAdmin />

@@ -8,6 +8,7 @@ const Resultados = () => {
 
   const resultados = resultadosData.resultados;
 
+  {/* Container página */}
   return (
     <div className="home-container">
       <NavBar />
@@ -30,6 +31,7 @@ const Resultados = () => {
           </div>
         </div>
 
+        {/* Implementação do componente Table */}
         <Table 
         headers={["Data", "Solicitante", "Exames Realizado"]}
         data={resultados}

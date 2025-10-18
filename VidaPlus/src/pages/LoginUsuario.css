@@ -150,3 +150,132 @@
   margin: 0;
   margin-top: 5px;
 }
+
+/*Responsividade*/
+
+@media (max-width: 1200px) {
+  .left-side h1 {
+    font-size: 2rem;
+  }
+  
+  .left-side p {
+    font-size: 1rem;
+    max-width: 400px;
+  }
+  
+  .LogoIcon .Logo-Text {
+    font-size: 32px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .left-side {
+    min-height: 40vh;
+    padding: 30px 20px;
+  }
+  
+  .left-side h1 {
+    font-size: 1.8rem;
+    margin-top: 10px;
+  }
+  
+  .left-side p {
+    font-size: 0.95rem;
+    max-width: 350px;
+  }
+  
+  .right-side {
+    padding: 30px 20px;
+    min-height: 60vh;
+  }
+  
+  .LogoIcon {
+    top: 15px;
+  }
+  
+  .LogoIcon img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .LogoIcon .Logo-Text {
+    font-size: 28px;
+  }
+  
+  .LogoIcon .Logo-Text .Logo-Text-2 {
+    margin-left: 45px;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 600px) {
+  .left-side {
+    min-height: 35vh;
+    padding: 20px 15px;
+  }
+  
+  .left-side .logo img {
+    max-width: 120px;
+  }
+  
+  .left-side h1 {
+    font-size: 1.5rem;
+  }
+  
+  .left-side p {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    max-width: 280px;
+  }
+  
+  .right-side {
+    padding: 20px 15px;
+  }
+  
+  .LogoIcon {
+    top: 10px;
+    gap: 8px;
+  }
+  
+  .LogoIcon img {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 15px;
+  }
+  
+  .LogoIcon .Logo-Text {
+    font-size: 24px;
+  }
+  
+  .LogoIcon .Logo-Text .Logo-Text-2 {
+    margin-left: 35px;
+  }
+  
+  .right-side .paragraph {
+    margin-top: 20px;
+    font-size: 13px;
+    max-width: 280px;
+  }
+  
+  .perfil-selector {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  
+  .right-side .button-link {
+    max-width: 100%;
+    font-size: 14px;
+  }
+  
+  .rodape {
+    margin-top: 20px;
+  }
+}
+

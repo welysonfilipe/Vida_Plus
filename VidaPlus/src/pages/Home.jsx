@@ -7,6 +7,7 @@ import Sidebar from "../components/Sidebar";
 const Home = () => {
   const navigate = useNavigate();
 
+  {/* Container página */}
   return (
     <div className="home-container">
       <NavBar />
@@ -27,7 +28,7 @@ const Home = () => {
             />
           </div>
 
-          {/* Card de Dados de Identificação */}
+          {/* Container Dados de Identificação */}
           <div className="info-card">
             <h3 className="card-title">Dados de Identificação</h3>
             
@@ -84,7 +85,7 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Card de Dados de Contato */}
+          {/* Container Dados de Contato */}
           <div className="info-card">
             <h3 className="card-title">Dados de Contato</h3>
             

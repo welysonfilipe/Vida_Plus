@@ -8,6 +8,7 @@ const HistoricoTratamentos = () => {
 
   const tratamento = tratamentoData.tratamento;
 
+  {/* Container página */}
   return (
     <div className="home-container">
       <NavBar />
@@ -30,6 +31,7 @@ const HistoricoTratamentos = () => {
           </div>
         </div>
 
+        {/* Implementação do componente Table */}
         <Table 
         headers={["Data", "Diagnóstico", "Tratamento Utilizado"]}
         data={tratamento}

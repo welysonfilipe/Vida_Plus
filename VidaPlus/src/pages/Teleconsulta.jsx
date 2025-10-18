@@ -1,12 +1,11 @@
-import { useNavigate } from "react-router-dom";
 import NavBar from '../components/NavBar';
 import Sidebar from '../components/Sidebar';
 import Button from '../components/Button';
 import "./Teleconsulta.css";
 
 const Teleconsulta = () => {
-  const navigate = useNavigate();
 
+  {/* Container página */}
   return (
     <div className="teleconsulta-container">
       <NavBar />
@@ -41,6 +40,8 @@ const Teleconsulta = () => {
                 <strong>Após o atendimento:</strong> caso necessário, o médico poderá emitir receitas ou encaminhamentos diretamente pelo sistema.
               </li>
             </ol>
+
+            {/* Implementação do componente Button */}
              <div className="button-section">
             <Button 
               text="Iniciar"

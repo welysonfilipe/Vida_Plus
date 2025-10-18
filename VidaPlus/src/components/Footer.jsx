@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
+
+  {/* Container página */}
   return (
     <footer className="footer-container">
       <div className="footer-content">
@@ -14,9 +16,9 @@ const Footer = () => {
           <h4>Links Rápidos</h4>
           <ul className="footer-links">
             <li><Link to="/home">Home</Link></li>
-            <li><Link to="/agenda">Agenda</Link></li>
+            <li><Link to="/agenda">Agendar Consulta</Link></li>
+            <li><Link to="/resultados">Resultados de Exames</Link></li>
             <li><Link to="/teleconsulta">Teleconsulta</Link></li>
-            <li><Link to="/contato">Contato</Link></li>
           </ul>
         </div>
 
