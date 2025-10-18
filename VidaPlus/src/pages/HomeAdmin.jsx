@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import "./HomeAdmin.css";
 import estatisticasData from "../data/estatisticasData.json"
 import atendimentosMesData from "../data/atendimentosMesData.json"
@@ -31,7 +29,7 @@ const HomeAdmin = () => {
             <p className="Home-subtitle">Visão geral do sistema</p>
           </div>
 
-          {/* Cards de Estatísticas - CLICÁVEIS */}
+          {/* Cards de Estatísticas */}
           <div className="stats-grid">
             {estatisticas.map(stat => (
               <div 
@@ -47,7 +45,6 @@ const HomeAdmin = () => {
                   <h3>{stat.valor}</h3>
                   <p>{stat.titulo}</p>
                 </div>
-                <div className="card-arrow">→</div>
               </div>
             ))}
           </div>

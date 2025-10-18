@@ -56,7 +56,7 @@ const NavBarAdmin = () => {
         </div>
 
         <Link 
-        to="/estoque" 
+        to="/gestao-estoque" 
         onClick={closeDropdowns}
         >
           Gestão de Estoque

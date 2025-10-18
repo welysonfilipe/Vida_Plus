@@ -23,8 +23,12 @@ import GestaoPacientes from './pages/GestaoPacientes';
 import Prontuario from './pages/Prontuario';
 import GestaoProfissionais from './pages/GestaoProfissionais';
 import GestaoInternacoes from './pages/GestaoInternacoes.jsx'
+import GestaoAgenda from './pages/GestaoAgenda.jsx';
+import GestaoEstoque from './pages/GestaoEstoque.jsx';
 
 const router = createBrowserRouter([
+
+  /* Rotas Usuários */
   {
     path: "/",
     element: <LoginUsuario />
@@ -61,6 +65,8 @@ const router = createBrowserRouter([
     path: "/contato",  
     element: <Contato />
   },
+
+  /* Rotas Admin */
   {
     path: "/home-admin",  
     element: <HomeAdmin />
@@ -81,45 +87,15 @@ const router = createBrowserRouter([
     path: "/gestao-internacoes",  
     element: <GestaoInternacoes />
   },
-
-  /*
-   // Páginas Gestão Administradores
-   {
-    path: "/home-admin",  
-    element: <HomeAdmin />
-  },
-  {
-    path: "/gestao-pacientes",  
-    element: <GestaoPacientes />
-  },
-  {
-    path: "/gestao-profissionais",  
-    element: <GestaoProfissionais />
-  },
-  {
-    path: "/gestao-internacoes",  
-    element: <GestaoInternacoes />
-  },
   {
     path: "/gestao-agenda",  
     element: <GestaoAgenda />
   },
-
-  
-  // Páginas Relatórios Administradores
-    {
-    path: "/relatorios-atendimentos",  
-    element: <RelatoriosAtendimentos />
-  },
   {
-    path: "/relatorios-Financeiro",  
-    element: <RelatoriosFinanceiros />
-  },
-  {
-    path: "/relatorios-estoque",  
-    element: <RelatoriosEstoque/>
+    path: "/gestao-estoque",  
+    element: <GestaoEstoque/>
   }
-  */
+
 ])
 
 createRoot(document.getElementById('root')).render(

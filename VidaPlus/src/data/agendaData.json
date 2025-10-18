@@ -1,0 +1,76 @@
+{
+  "metricas": [
+    {
+      "id": 1,
+      "titulo": "Consultas Hoje",
+      "valor": 23,
+      "icone": "📅",
+      "cor": "#3A5F6F"
+    },
+    {
+      "id": 2,
+      "titulo": "Próximos 7 Dias",
+      "valor": 87,
+      "icone": "📆",
+      "cor": "#5a8a9f"
+    },
+    {
+      "id": 3,
+      "titulo": "Confirmadas",
+      "valor": 65,
+      "icone": "✅",
+      "cor": "#7aafcf"
+    },
+    {
+      "id": 4,
+      "titulo": "Aguardando Confirmação",
+      "valor": 12,
+      "icone": "⏰",
+      "cor": "#9ac5df"
+    }
+  ],
+  "consultas": [
+    {
+      "id": 1,
+      "nomePaciente": "Maria Silva Santos",
+      "dataConsulta": "2025-10-18",
+      "convenioMedico": "Unimed",
+      "medicoResponsavel": "Dr. João Carvalho"
+    },
+    {
+      "id": 2,
+      "nomePaciente": "Pedro Oliveira Costa",
+      "dataConsulta": "2025-10-18",
+      "convenioMedico": "Bradesco Saúde",
+      "medicoResponsavel": "Dra. Ana Lima"
+    },
+    {
+      "id": 3,
+      "nomePaciente": "Carlos Eduardo Souza",
+      "dataConsulta": "2025-10-19",
+      "convenioMedico": "Particular",
+      "medicoResponsavel": "Dr. Ricardo Martins"
+    },
+    {
+      "id": 4,
+      "nomePaciente": "Juliana Ferreira Dias",
+      "dataConsulta": "2025-10-19",
+      "convenioMedico": "Amil",
+      "medicoResponsavel": "Dra. Beatriz Campos"
+    },
+    {
+      "id": 5,
+      "nomePaciente": "Roberto Silva Lima",
+      "dataConsulta": "2025-10-20",
+      "convenioMedico": "SulAmérica",
+      "medicoResponsavel": "Dr. João Carvalho"
+    },
+    {
+      "id": 6,
+      "nomePaciente": "Fernanda Costa Alves",
+      "dataConsulta": "2025-10-20",
+      "convenioMedico": "Unimed",
+      "medicoResponsavel": "Dra. Ana Lima"
+    }
+  ]
+}

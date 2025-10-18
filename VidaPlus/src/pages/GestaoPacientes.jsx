@@ -35,7 +35,6 @@ const GestaoPacientes = () => {
           <h1>Gestão de Pacientes</h1>
           <Button 
             text="+ Novo Paciente"
-            onClick={() => navigate('/cadastro')}
             className="button-novo"
           />
         </div>

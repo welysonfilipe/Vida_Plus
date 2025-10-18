@@ -11,13 +11,18 @@ import Button from "../components/Button";
 const login = () => {
   const navigate = useNavigate()
   const [mode, setMode] = useState("login")
+  const [perfil, setPerfil] = useState("paciente")
 
   const handleSubmit = (e) => {
     e.preventDefault()
 
     if (mode === "login") {
-      navigate('/home')
-
+      // Redireciona com base no tipo de usuário
+      if(perfil === "paciente") {
+        navigate('/home')
+      } else {
+        navigate('/home-admin')
+      }
     } else {
       navigate('/cadastro')
     }
@@ -41,6 +46,33 @@ const login = () => {
           <div className="form-area">
           <p className="paragraph">{mode === "login" ? "Utilize o seu e-mail e senha cadastrada para efetuar login": "Preencha os campos abaixo para criar sua conta"}</p>
 
+
+          {/* Checkbox utilizado para ajustar as rotas corretas entre usuário e admin */}
+          {mode === "login" && (
+            <div className="perfil-selector">
+            <label>
+              <input
+                type="radio"
+                value="paciente"
+                checked={perfil === "paciente"}
+                onChange={() => setPerfil("paciente")}
+              />
+              Paciente
+            </label>
+            <label>
+              <input
+                type="radio"
+                value="admin"
+                checked={perfil === "admin"}
+                onChange={() => setPerfil("admin")}
+              />
+              Administrador
+            </label>
+          </div>
+        )}
+
+
+          {/* Utilização do components forms para área de login da página */}
           <Forms mode={mode} />
 
           <Button text={mode === "login" ? "Acessar Conta" : "Criar Conta"} 
@@ -48,7 +80,7 @@ const login = () => {
             onClick={handleSubmit}
           />
           {/* Link alternar entre login/cadastro */}
-          {mode === "login" ? (
+          {mode === "login" && perfil === "paciente" && (
             <a
               href="#"
               className="button-link"
@@ -56,7 +88,8 @@ const login = () => {
             >
               Criar Conta
             </a>
-          ) : (
+          )}
+           {mode === "register" && ( 
             <a
               href="#"
               className="button-link"

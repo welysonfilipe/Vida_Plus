@@ -1,0 +1,124 @@
+{
+  "estoque": [
+    {
+      "id": "INS001",
+      "nome": "Luvas Cirúrgicas",
+      "categoria": "EPI",
+      "quantidade": 500,
+      "unidade": "Pares",
+      "fornecedor": "MedSupply",
+      "dataValidade": "2026-05-15",
+      "status": "Disponível"
+    },
+    {
+      "id": "INS002",
+      "nome": "Máscaras N95",
+      "categoria": "EPI",
+      "quantidade": 150,
+      "unidade": "Unidades",
+      "fornecedor": "ProMedic",
+      "dataValidade": "2025-12-20",
+      "status": "Disponível"
+    },
+    {
+      "id": "INS003",
+      "nome": "Álcool em Gel 70%",
+      "categoria": "Higienização",
+      "quantidade": 80,
+      "unidade": "Litros",
+      "fornecedor": "CleanMed",
+      "dataValidade": "2026-08-10",
+      "status": "Disponível"
+    },
+    {
+      "id": "INS004",
+      "nome": "Seringas Descartáveis 10ml",
+      "categoria": "Material Descartável",
+      "quantidade": 25,
+      "unidade": "Caixas",
+      "fornecedor": "MedSupply",
+      "dataValidade": "2027-03-01",
+      "status": "Estoque Baixo"
+    },
+    {
+      "id": "INS005",
+      "nome": "Algodão Hidrófilo",
+      "categoria": "Curativos",
+      "quantidade": 200,
+      "unidade": "Pacotes",
+      "fornecedor": "FarmaMed",
+      "dataValidade": "2026-11-25",
+      "status": "Disponível"
+    },
+    {
+      "id": "INS006",
+      "nome": "Gaze Estéril",
+      "categoria": "Curativos",
+      "quantidade": 300,
+      "unidade": "Pacotes",
+      "fornecedor": "MedSupply",
+      "dataValidade": "2026-09-30",
+      "status": "Disponível"
+    },
+    {
+      "id": "INS007",
+      "nome": "Paracetamol 500mg",
+      "categoria": "Medicamentos",
+      "quantidade": 10,
+      "unidade": "Caixas",
+      "fornecedor": "FarmaBrasil",
+      "dataValidade": "2025-11-15",
+      "status": "Crítico"
+    },
+    {
+      "id": "INS008",
+      "nome": "Dipirona 500mg",
+      "categoria": "Medicamentos",
+      "quantidade": 50,
+      "unidade": "Caixas",
+      "fornecedor": "FarmaBrasil",
+      "dataValidade": "2026-02-28",
+      "status": "Disponível"
+    },
+    {
+      "id": "INS009",
+      "nome": "Termômetro Digital",
+      "categoria": "Equipamentos",
+      "quantidade": 15,
+      "unidade": "Unidades",
+      "fornecedor": "TechMed",
+      "dataValidade": "-",
+      "status": "Disponível"
+    },
+    {
+      "id": "INS010",
+      "nome": "Estetoscópio",
+      "categoria": "Equipamentos",
+      "quantidade": 8,
+      "unidade": "Unidades",
+      "fornecedor": "TechMed",
+      "dataValidade": "-",
+      "status": "Estoque Baixo"
+    },
+    {
+      "id": "INS011",
+      "nome": "Cateter Intravenoso",
+      "categoria": "Material Descartável",
+      "quantidade": 120,
+      "unidade": "Unidades",
+      "fornecedor": "ProMedic",
+      "dataValidade": "2027-06-10",
+      "status": "Disponível"
+    },
+    {
+      "id": "INS012",
+      "nome": "Soro Fisiológico 0,9%",
+      "categoria": "Soluções",
+      "quantidade": 5,
+      "unidade": "Caixas",
+      "fornecedor": "FarmaMed",
+      "dataValidade": "2026-01-20",
+      "status": "Crítico"
+    }
+  ]
+}
