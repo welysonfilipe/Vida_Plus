@@ -5,6 +5,7 @@ import NavBarAdmin from "../components/NavBarAdmin";
 import Table from "../components/Table";
 import Button from "../components/Button";
 import metricasData from "../data/metricasData.json";
+// Importação do arquivo para utilização no código
 import pacientesData from "../data/pacientesData.json";
 
 const GestaoPacientes = () => {
