@@ -2,13 +2,11 @@
   "name": "conexao_saude",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://welysonf.github.io/Vida_Plus",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
+    "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
