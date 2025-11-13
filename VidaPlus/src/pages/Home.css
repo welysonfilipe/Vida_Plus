@@ -119,76 +119,18 @@
     flex-direction: column;
   }
 
-  .sidebar-toggle {
-    display: block;
+  .main-content {
+    padding: 20px;
+    padding-top: 70px;
   }
 
-  /* Sidebar como drawer lateral */
-  .sidebar-item.active {
-  color: #3A5F6F;
-  background-color: white;
-}
-
-/* === BOTÃO HAMBÚRGUER === */
-.sidebar-toggle {
-  display: none; /* Escondido por padrão (desktop) */
-  position: fixed;
-  top: 70px;
-  left: 16px;
-  z-index: 1001;
-  background: #2c5f7e;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 8px;
-  cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  transition: background 0.2s;
-}
-
-.sidebar-toggle:hover {
-  background: #1e4258;
-}
-
-/* === OVERLAY === */
-.sidebar-overlay {
-  display: none;
-}
-  
-.sidebar {
-    position: fixed;
-    top: 60px;
-    left: 0;
-    bottom: 0;
-    width: 280px;
-    transform: translateX(-100%);
-    z-index: 1000;
-    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
-    overflow-y: auto;
+  .header-section {
+    margin-bottom: 0;
   }
-
-  /* Sidebar aberta */
-  .sidebar.sidebar-open {
-    transform: translateX(0);
-  }
-
-  /* Overlay escuro */
-  .sidebar-overlay {
-    display: block;
-    position: fixed;
-    top: 60px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-  }
-}
   
   .form-grid {
     grid-template-columns: 1fr;
   }
   
-  .main-content {
-    padding: 20px;
-  }
+ 
+}

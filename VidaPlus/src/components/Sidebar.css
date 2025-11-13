@@ -1,3 +1,4 @@
+/* === SIDEBAR BASE === */
 .sidebar {
   width: 220px;
   background-color: #fff;
@@ -5,6 +6,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease;
 }
 
 .sidebar-item {
@@ -24,3 +26,104 @@
   background-color: #f0f0f0;
 }
 
+.sidebar-item.active {
+  color: #3A5F6F;
+  background-color: #f0f0f0;
+  font-weight: 600;
+}
+
+/* === BOTÃO HAMBÚRGUER (Desktop - Escondido) === */
+.sidebar-toggle {
+  display: none;
+  position: fixed;
+  top: 80px;
+  left: 20px;
+  z-index: 1002; /* Z-index alto para ficar acima de tudo */
+  background: #2c5f7e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: background 0.2s;
+}
+
+.sidebar-toggle:hover {
+  background: #1e4258;
+}
+
+/* Ícone Hambúrguer CSS */
+.hamburger {
+  width: 24px;
+  height: 18px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Animação X quando aberto */
+.hamburger-open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* === OVERLAY (Desktop - Escondido) === */
+.sidebar-overlay {
+  display: none;
+}
+
+/* === RESPONSIVO: MOBILE === */
+@media (max-width: 768px) {
+  /* MOSTRA o botão hambúrguer */
+  .sidebar-toggle {
+    display: block;
+  }
+
+  /* Sidebar como drawer lateral */
+  .sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    width: 280px;
+    transform: translateX(-100%);
+    z-index: 1000;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    overflow-y: auto;
+  }
+
+  /* Sidebar aberta */
+  .sidebar.sidebar-open {
+    transform: translateX(0);
+  }
+
+  /* MOSTRA overlay escuro */
+  .sidebar-overlay {
+    display: block;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+}

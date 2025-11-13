@@ -1,25 +1,28 @@
-import { useState } from "react"
-import {useNavigate } from "react-router-dom"
-import { Menu, X } from 'lucide-react'
-import "./sidebar.css"
+import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
+import "./Sidebar.css";
 
 const Sidebar = () => {
-    const navigate = useNavigate()
-    const [isOpen, setIsOpen] = useState(false)
+  const navigate = useNavigate();
+  const [isOpen, setIsOpen] = useState(false);
 
-    const toggleSidebar = () => {
-        setIsOpen(!isOpen)
-    }
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
 
-    return (
-        <>
+  return (
+    <>
       {/* Botão Hambúrguer - Visível apenas em mobile */}
       <button 
         className="sidebar-toggle"
         onClick={toggleSidebar}
         aria-label="Toggle menu"
       >
-        {isOpen ? <X size={24} /> : <Menu size={24} />}
+        <div className={`hamburger ${isOpen ? 'hamburger-open' : ''}`}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </button>
 
       {/* Overlay - Fecha sidebar ao clicar fora */}
@@ -30,15 +33,26 @@ const Sidebar = () => {
         />
       )}
 
-        <div className='sidebar'>
-            <button onClick={() => navigate('/agenda')} className="sidebar-item active">Agendar Consulta</button>
-            <button onClick={() => navigate('/historico-consultas')} className="sidebar-item">Histórico de Consultas</button>
-            <button onClick={() => navigate('/historico-tratamentos')} className="sidebar-item">Histórico de Tratamentos</button>
-            <button onClick={() => navigate('/resultados')} className="sidebar-item">Resultado de Exames</button>
-            <button onClick={() => navigate('/teleconsulta')} className="sidebar-item" >Teleconsulta</button>
-        </div>
+      {/* Sidebar */}
+      <div className={`sidebar ${isOpen ? 'sidebar-open' : ''}`}>
+        <button onClick={() => navigate('/agenda')} className="sidebar-item active">
+          Agendar Consulta
+        </button>
+        <button onClick={() => navigate('/historico-consultas')} className="sidebar-item">
+          Histórico de Consultas
+        </button>
+        <button onClick={() => navigate('/historico-tratamentos')} className="sidebar-item">
+          Histórico de Tratamentos
+        </button>
+        <button onClick={() => navigate('/resultados')} className="sidebar-item">
+          Resultado de Exames
+        </button>
+        <button onClick={() => navigate('/teleconsulta')} className="sidebar-item">
+          Teleconsulta
+        </button>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;
